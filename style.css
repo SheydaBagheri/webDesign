@@ -1,0 +1,226 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root{
+    --green-light : #12966f ;
+    --green-dark : #063c2b;
+    --black: #000000;
+    --white : #ffffff;
+
+}
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: 'libre' , sans-serif;
+}
+#header{
+    background: url(./img/main.png) ;
+    /* width: 90vw; */
+    min-height: 100vh;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+
+}
+.header-top{
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.right-Header h3{
+  
+   
+
+}
+.left-Header ul{
+    display: flex;
+    list-style: none;
+    
+  
+
+}
+.left-Header li{
+    padding: 20px;
+    cursor: pointer;
+    color: var(--green-dark);
+    transition: all 1s;
+}
+.left-Header li:hover{
+    transform: translateX(10px);
+    border-bottom: 2px solid var(--green-dark);
+
+
+}
+.content-header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    height: 80vh;
+}
+.content-header h1{
+    color: var(--green-dark);
+    font-size: 4rem;
+    font-weight: 100;
+}
+.content-header h2{
+    font-size: 2rem;
+    font-weight: 100;
+
+}
+ .btn{
+    border: 2px solid var(--green-light);
+    width: 200px;
+    height: 50px;
+    background-color: var(--green-light);
+    color: var(--white);
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: all 1s;
+    
+}
+.btn:hover{
+    transform: scale(1.1);
+}
+#home{
+    padding-top: 50px;
+
+}
+#home nav{
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.home-list{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:var(--white);
+    box-shadow: 3px 3px 3px rgba(255, 255, 255, 0.9) ,7px 7px 7px 7px rgba(232, 235, 234, 0.9);
+    margin: 30px;
+
+}
+.home-list h4{
+    margin: 10px;
+    font-size: 1.2rem;
+    color: var(--green-dark);
+}
+.home-list img{
+    width: 65%;
+}
+.home-list p {
+    width: 200px;
+}
+.left-Header i{
+    display: none;
+}
+#about_us{
+    margin-top: 150px;
+}
+#about_us nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+#about_us img{
+    max-width:100%;
+}
+.text-about{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 500px;
+ 
+}
+.text-about h3{
+    padding: 30px;
+    color: var(--green-dark);
+}
+.text-about p{
+
+}
+#talktoUs{
+    background-image: url(./img/talk-to-us.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 150px;
+    position: relative;
+
+}
+#talktoUs nav{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px
+};
+#talktoUs h3 {
+    color: var(--green-dark);
+    }
+
+
+
+@media only screen and (max-width: 520px) {
+    .content-header h1{
+        font-size: 2rem;
+    }
+    .content-header h2{
+        font-size: 1rem;
+    }
+    .left-Header {
+    
+        position: relative;
+
+    }
+    .left-Header ul{
+        display: inline;
+        text-align: right;
+        padding: 10px;
+ 
+    }
+    .left-Header li{
+        padding: 20px;
+    }
+    .header-top{
+        padding: 0%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .left-Header li:hover{
+        transform: translateX(-2px);
+        border-bottom: none
+    
+    
+    }
+    .left-Header nav{
+        background-color: var(--white);
+        display: none;
+
+    }
+    .left-Header i {
+        display: inline;
+        position: absolute;
+        top: 0;
+        right: 5px;
+        font-size: 30px;
+        color: var(--green-dark);
+    }
+
+
+
+    
+}
