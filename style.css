@@ -24,6 +24,7 @@ body{
     background-position: center;
 
 }
+
 .header-top{
     padding: 10px;
     display: flex;
@@ -31,17 +32,9 @@ body{
     align-items: center;
 
 }
-.right-Header h3{
-  
-   
-
-}
 .left-Header ul{
     display: flex;
     list-style: none;
-    
-  
-
 }
 .left-Header li{
     padding: 20px;
@@ -54,6 +47,11 @@ body{
     border-bottom: 2px solid var(--green-dark);
 
 
+}
+.left-Header a {
+    color: var(--green-dark);
+    text-decoration: none;
+    
 }
 .content-header{
     display: flex;
@@ -166,11 +164,19 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: 400px;
     gap: 20px
 };
 #talktoUs h3 {
     color: var(--green-dark);
     }
+#footer{
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* about page */
 
 
 
